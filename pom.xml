@@ -36,8 +36,10 @@
 				
 							<!-- Deploy User Parameter-->
 				
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
+						
+						<connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
+						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>Sandbox</environment>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
