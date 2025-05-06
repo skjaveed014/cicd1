@@ -36,8 +36,8 @@
 				
 							<!-- Deploy User Parameter-->
 				
-						<username>anypointmdwhub2025</username>
-						<password>Javeed@123</password>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
 						<environment>Sandbox</environment>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
