@@ -47,6 +47,9 @@
 						<replicas>1</replicas>
       					<vCores>0.1</vCores>
 						<objectStoreV2>true</objectStoreV2>
+						 <deploymentSettings>
+       						<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+      					</deploymentSettings>
 						
 				</cloudHub2Deployment>
 				<classifier>mule-application</classifier>
