@@ -30,7 +30,7 @@
 				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+					<cloudHub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.9.0</muleVersion>
 				
@@ -41,14 +41,14 @@
 						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>Sandbox</environment>
-						<deploymentType>cloudhub</deploymentType>
+						<target>Cloudhub-US-East-2</target>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
-						<workerType>MICRO</workerType>
-						<workers>1</workers>
+						<replicas>1</replicas>
+      					<vCores>0.1</vCores>
 						<objectStoreV2>true</objectStoreV2>
 						
-				</cloudHubDeployment>
+				</cloudHub2Deployment>
 				<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
