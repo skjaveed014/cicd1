@@ -16,7 +16,6 @@
 		<app.runtime>4.9.0</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 		<skipDeploymentVerification>false</skipDeploymentVerification>
-		<reg>Cloudhub-US-East-2</reg>
 	</properties>
 
 	<build>
@@ -39,13 +38,12 @@
 				
 							<!-- Deploy User Parameter-->
 						
-						<username>anypointmdwhub2025</username>
-						<password>Javeed@123</password>
 						<connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
 						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>Sandbox</environment>
-						<target>Cloudhub</target>
+						<target>CH2</target>
+						<reg>Cloudhub-US-East-2</reg>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
     					<businessGroupId>662ab5d2-910c-4c58-bd60-1fdf0d3fa12d</businessGroupId>
