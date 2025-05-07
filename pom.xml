@@ -41,7 +41,7 @@
 						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>Sandbox</environment>
-						<target>Cloudhub</target>
+						<target>Cloudhub-US-east-2</target>
 						<region>us-east-2</region>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
