@@ -31,6 +31,7 @@
 				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
+					<deployment>
 					<cloudHub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.9.0</muleVersion>
@@ -62,6 +63,7 @@
 						
 				</cloudHub2Deployment>
 				<classifier>mule-application</classifier>
+				</deployment>
 				</configuration>
 			</plugin>
 		</plugins>
