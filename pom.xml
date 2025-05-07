@@ -15,6 +15,8 @@
 
 		<app.runtime>4.9.0</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
+		<skipDeploymentVerification>false</skipDeploymentVerification>
+		<reg>Cloudhub-US-East-2</reg>
 	</properties>
 
 	<build>
@@ -30,29 +32,36 @@
 				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+					<cloudHub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.9.0</muleVersion>
+						<provider>MC</provider>
 				
 							<!-- Deploy User Parameter-->
-				
 						
+						<username>anypointmdwhub2025</username>
+						<password>Javeed@123</password>
 						<connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
 						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>Sandbox</environment>
-						<target>Cloudhub-US-east-2</target>
-						<region>us-east-2</region>
+						<target>US-East-Region 2</target>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
 						<replicas>1</replicas>
       					<vCores>0.1</vCores>
-						<objectStoreV2>true</objectStoreV2>
+      					<integrations>
+							<services>
+								<objectStoreV2>
+									<enabled>true</enabled>
+								</objectStoreV2>
+							</services>
+						</integrations>
 						 <deploymentSettings>
        						<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
       					</deploymentSettings>
 						
-				</cloudHubDeployment>
+				</cloudHub2Deployment>
 				<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
