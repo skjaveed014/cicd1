@@ -48,6 +48,7 @@
 						<target>Cloudhub</target>
 						<applicationName>cicd1-app</applicationName>
 						<businessGroup>MiddlewareHub</businessGroup>
+    					<businessGroupId>662ab5d2-910c-4c58-bd60-1fdf0d3fa12d</businessGroupId>
 						<replicas>1</replicas>
       					<vCores>0.1</vCores>
       					<integrations>
