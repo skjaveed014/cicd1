@@ -31,37 +31,32 @@
 				<version>4.3.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<deployment>
-					<cloudHub2Deployment>
+					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.9.0</muleVersion>
 						<provider>MC</provider>
-				
-							<!-- Deploy User Parameter-->
-						
-						<connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
-						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials</connectedAppGrantType>
 						<environment>Sandbox</environment>
-						<target>CH2</target>
-						<reg>Cloudhub-US-East-2</reg>
-						<applicationName>cicd1-app</applicationName>
-						<businessGroup>MiddlewareHub</businessGroup>
-    					<businessGroupId>662ab5d2-910c-4c58-bd60-1fdf0d3fa12d</businessGroupId>
+						<target>US-East-Region 2</target>
+						<!-- Target region -->
+						<muleVersion>${app.runtime}</muleVersion>
+						<!-- Mule runtime version -->
+						<username>dharaniaa2it</username>
+						<!-- Username for Cloudhub -->
+						<password>Dharu@143job</password>
+						<!-- Password for Cloudhub -->
+						<applicationName>CICD-Demoooooo</applicationName>
+						<!-- Application name -->
 						<replicas>1</replicas>
-      					<vCores>0.1</vCores>
-      					<integrations>
+						<vCores>0.1</vCores>
+						<skipDeploymentVerification>${skipDeploymentVerification}</skipDeploymentVerification>
+						<!-- Skip deployment verification -->
+						<integrations>
 							<services>
 								<objectStoreV2>
 									<enabled>true</enabled>
 								</objectStoreV2>
 							</services>
 						</integrations>
-						 <deploymentSettings>
-       						<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
-      					</deploymentSettings>
-						
-				</cloudHub2Deployment>
+					<
 				<classifier>mule-application</classifier>
 				</deployment>
 				</configuration>
